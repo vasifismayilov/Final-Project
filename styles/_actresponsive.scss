@@ -1,0 +1,84 @@
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+    .aherf {
+        padding-top: 60px;
+    }
+    .active {
+        .container2 {
+            img {
+                margin-bottom: 30px;
+            }
+            .smallimg {
+                img {
+                    display: none;
+                }
+            }
+        }
+    }
+    .relatedproducts {
+        .imgbox2 {
+            img {
+                display: none;
+            }
+            .percent {
+                display: none;
+            }
+        }
+        .bx3txt {
+            display: none;
+        }
+        .bx4txt {
+            display: none;
+        }
+    }
+    .countbutton {
+        margin-left: 20px;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 576px) and (max-width: 767px) {
+    .aherf {
+        padding-top: 60px;
+    }
+    .active {
+        .container2 {
+            img {
+                margin-bottom: 30px;
+            }
+            .smallimg {
+                img {
+                    display: none;
+                }
+            }
+        }
+    }
+    .relatedproducts {
+        .imgbox2 {
+            img {
+                display: none;
+            }
+        }
+        .bx3txt {
+            display: none;
+        }
+        .bx4txt {
+            display: none;
+        }
+    }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+    .relatedproducts {
+        .imgbox2 {
+            img {
+                display: none;
+            }
+        }
+        .bx3txt {
+            display: none;
+        }
+        .bx4txt {
+            display: none;
+        }
+    }
+}

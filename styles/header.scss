@@ -1,0 +1,234 @@
+* {
+    a {
+        text-decoration: none;
+    }
+    ul {
+        list-style: none;
+    }
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+        "Helvetica Neue", sans-serif;
+}
+#header {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    background-color: white;
+    .header-navbar {
+        height: 96px;
+        .logo {
+            width: 200px;
+            a {
+                img {
+                    max-width: 110px;
+                }
+            }
+        }
+        .menu {
+            ul {
+                li {
+                    margin: 0 15px;
+                    a {
+                        text-transform: uppercase;
+                        transition: 0.3s;
+                        font-size: 12px;
+                        color: black;
+                        font-weight: 500;
+                        &:hover {
+                            color: #2dbbf0;
+                        }
+                    }
+                }
+                .shop {
+                    position: relative;
+                    &:hover {
+                        .shop-dropdown-menu {
+                            visibility: visible;
+                            transform: translateY(0);
+                            opacity: 100;
+                        }
+                    }
+                    .shop-dropdown-menu {
+                        background-color: white;
+                        position: absolute;
+                        top: calc(100% + 25px);
+                        visibility: hidden;
+                        opacity: 0;
+                        border-radius: 3px;
+                        transform: translateY(30px);
+                        transition: transform 0.5s ease-in-out 0.1s, opacity 0.4s ease-in 0.3s,
+                            visibility 0.4s ease-in 0.3s;
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            top: -25px;
+                            left: 0;
+                            width: 100%;
+                            height: 40px;
+                            background-color: transparent;
+                        }
+                        .shop-submenu {
+                            h5 {
+                                &::after {
+                                    content: "";
+                                    position: absolute;
+                                    border-bottom: #2dbbf0 solid 1px;
+                                    display: block;
+                                    width: 60px;
+                                    margin-top: 5px;
+                                }
+                            }
+                            ul {
+                                li {
+                                    margin-left: 0%;
+                                    a {
+                                        color: #919191;
+                                        text-align: left;
+                                        line-height: 32px;
+                                        &:hover {
+                                            color: #2dbbf0;
+                                        }
+                                    }
+                                }
+                            }
+                            .shop-right {
+                                .shop-padding {
+                                    .image-box {
+                                        height: 320px;
+                                        width: auto;
+                                        position: relative;
+                                        &::before {
+                                            content: "";
+                                            position: absolute;
+                                            top: 0;
+                                            bottom: 0;
+                                            left: 0;
+                                            right: 0;
+                                            border: solid white;
+                                            margin: auto;
+                                            transition-property: width, transform;
+                                            transition-duration: 0.6s, 0.6s;
+                                            transition-timing-function: ease, ease;
+                                            transition-delay: 0s, 0s;
+                                            width: 0;
+                                            pointer-events: none;
+                                            border-width: 1px 0;
+                                        }
+                                        &::after {
+                                            content: "";
+                                            position: absolute;
+                                            top: 0;
+                                            bottom: 0;
+                                            left: 0;
+                                            right: 0;
+                                            border: solid white;
+                                            margin: auto;
+                                            transition-property: height, transform;
+                                            transition-duration: 0.6s, 0.6s;
+                                            transition-timing-function: ease, ease;
+                                            transition-delay: 0s, 0s;
+                                            height: 0;
+                                            border-width: 0 1px;
+                                            pointer-events: none;
+                                        }
+                                        .image-text {
+                                            a {
+                                                height: 30px;
+                                                color: #ffffff;
+                                                border-style: solid;
+                                                border-width: 0px 0px 2px 0px;
+                                                border-color: #ffffff;
+                                            }
+                                        }
+                                        &:hover {
+                                            &::before {
+                                                width: 100%;
+                                                top: 20px;
+                                                bottom: 20px;
+                                            }
+                                            &::after {
+                                                height: 100%;
+                                                right: 20px;
+                                                left: 20px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .search {
+        ul {
+            align-items: center;
+            li {
+                line-height: 0;
+                .user {
+                    align-items: center;
+                }
+                a {
+                    color: #020612;
+                    transition: 0.3s;
+                    i {
+                        width: 20px;
+                        height: 20px;
+                        line-height: 1.3;
+                    }
+                    &:hover {
+                        color: #2dbbf0;
+                    }
+                }
+            }
+        }
+    }
+}
+// Header END
+
+// FOOTER START
+#footer {
+    .footer-box {
+        .supply {
+            width: 25%;
+            span {
+                color: #898989;
+            }
+        }
+        .terms {
+            width: 50%;
+            border-style: solid;
+            border-width: 0 1px;
+            border-color: #535353;
+            ul {
+                li {
+                    margin: 0 10px;
+                    a {
+                        color: #898989;
+                        text-transform: uppercase;
+                        font-size: 11px;
+                        font-weight: 600;
+                        transition: 0.3s;
+                        letter-spacing: 2px;
+                        &:hover {
+                            color: white;
+                        }
+                    }
+                }
+            }
+            .footer-logo {
+                img {
+                    width: 110px;
+                }
+            }
+        }
+        .partners {
+            width: 25%;
+        }
+    }
+}
+
+@import "_headerresp"
+// @import "_headerresp";
+
+// @import "_responsive";

@@ -1,0 +1,129 @@
+// @import "../styles/header.scss";
+@import "../styles/header.scss" ;
+
+.contact{
+    position: relative;
+    padding-top: 96px;
+
+    h1{
+        position: absolute;
+        top: 39%;
+        left: 44.444%;
+        color: white;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 2.8rem;
+        line-height: 1;
+        font-weight: 300;
+    }
+    .cont-ul{
+        position: absolute;
+        top: 60%;
+        left: 44.8%;
+        
+        ul{
+            li{
+                font-size: 16px;
+                a{
+                    text-decoration: none;
+                    color: white;
+                    padding: 10px;
+                }
+                i{
+                    
+                    color: white;
+                }
+                span{
+                    color: white;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}
+.chat{
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    .container2{
+        width: 90%;
+        margin: auto;
+
+        .chat1{
+            border: 1px solid rgba(128, 128, 128, 0.158);
+           
+        }
+        .chat2{
+            border: 1px solid rgba(128, 128, 128, 0.158);
+        }
+        .chat3{
+            border: 1px solid rgba(128, 128, 128, 0.158);
+        }
+        i{
+            font-size: 2rem;
+            color: black;
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+        h3{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 24px;
+            font-weight: 500;
+        }
+        p{
+            color: #868686;
+        }
+        
+    }
+   
+    
+}
+.message{
+    width: 100%;
+    height: 100vh;
+    background-color: #FBFBFB;
+    text-align: center;
+    .messagetxt{
+        h2{
+            color: #242424;
+            font-size: 30px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 500;
+            padding: 50px;
+        }
+    }
+    .inputbx{
+        input{
+            display: block;
+            width: 100%;
+            height: 1.3cm;
+            margin-bottom: 30px;
+            border: none;
+        }
+        .inp{
+         height: 200px;
+        }
+    }
+    .abox{
+        a{
+            padding: 15px 25px;
+            color: white;
+            background-color: black;
+            text-decoration: none;
+            transition: 0.3s ease-in-out;
+            &:hover{
+                background-color: #2DBBF0;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@import "_contresponsive"
